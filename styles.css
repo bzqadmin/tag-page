@@ -1,0 +1,127 @@
+body {
+    background-color: #1a1a1a;
+    color: #e1e1e1;
+}
+
+.card {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.list-group-item {
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.delete-link {
+    padding: 0.25rem 0.5rem;
+    line-height: 1;
+}
+
+.input-group input {
+    margin-right: 5px;
+}
+
+.form-control {
+    height: 45px;  /* Increased height from default */
+    background-color: #333;
+    border-color: #404040;
+    color: #e1e1e1;
+}
+
+.form-control:focus {
+    background-color: #404040;
+    border-color: #505050;
+    color: #fff;
+}
+
+/* Search box styling */
+.input-group .form-control:first-child {
+    border-radius: 25px 0 0 25px;
+}
+
+.input-group-append .btn {
+    border-radius: 0 25px 25px 0;
+}
+
+/* Link cards styling */
+.link-card {
+    width: 75px;  /* Changed from 150px to 75px */
+    margin: 5px;  /* Reduced margin to better fit smaller cards */
+    border-radius: 10px;  /* Added border-radius for rounded corners */
+}
+
+.link-card .card {
+    cursor: pointer;
+    aspect-ratio: 1;
+    transition: transform 0.2s;
+}
+
+.link-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.add-link-card .card {
+    border: 2px dashed #404040;
+    background-color: #2d2d2d;
+}
+
+.add-link-card .card:hover {
+    border-color: #28a745;
+}
+
+.add-link-card i {
+    font-size: 1.5rem;  /* Reduced from 2rem to fit smaller card */
+    color: #888;
+}
+
+.link-card .card-body {
+    padding: 0.5rem;  /* Reduced padding for smaller card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
+}
+
+.link-card .card-title {
+    font-size: 0.8rem;  /* Add smaller font size for link names */
+    margin-bottom: 0;
+}
+
+.modal-content {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+.modal-header, .modal-footer {
+    border-color: #404040;
+}
+
+.close {
+    color: #e1e1e1;
+}
+
+.text-decoration-none {
+    color: #e1e1e1 !important;
+}
+
+.text-decoration-none:hover {
+    color: #fff !important;
+}
+
+.btn-primary {
+    background-color: #2b5a8b;
+    border-color: #2b5a8b;
+}
+
+.btn-secondary {
+    background-color: #404040;
+    border-color: #404040;
+}
