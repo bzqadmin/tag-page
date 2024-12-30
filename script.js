@@ -23,17 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const linkCard = document.createElement("div");
     linkCard.className = "link-card";
     linkCard.innerHTML = `
-            <div class="card">
-                <div class="card-body">
-                    <a href="${url}" target="_blank" class="text-decoration-none">
-                        <h6 class="card-title mb-0">${name}</h6>
-                    </a>
-                    <button class="btn btn-sm btn-link delete-link text-danger">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
+        <div class="card">
+            <button class="delete-link text-secondary">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="card-body">
+                <a href="${url}" target="_blank" class="text-decoration-none">
+                    <h6 class="card-title mb-0">${name}</h6>
+                </a>
             </div>
-        `;
+        </div>
+    `;
 
     // Insert before the add button
     linksContainer.insertBefore(linkCard, linksContainer.lastElementChild);
