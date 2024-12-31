@@ -82,4 +82,18 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     linksContainer.insertAdjacentHTML("beforeend", addButton);
   }
+
+  // 添加iframe自适应高度功能
+  const translateFrame = document.querySelector(".translate-frame");
+  translateFrame.onload = function () {
+    try {
+      // 尝试获取iframe内容高度
+      const height = translateFrame.contentWindow.document.body.scrollHeight;
+      translateFrame.style.height = height + "px";
+    } catch (e) {
+      // 如果出现跨域问题，使用默认高度
+      console.log("无法自动调整iframe高度，使用默认高度");
+      translateFrame.style.height = "600px";
+    }
+  };
 });

@@ -7,6 +7,8 @@ body {
     background-color: #2d2d2d;
     border-color: #404040;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .list-group-item {
@@ -138,4 +140,11 @@ body {
 .btn-secondary {
     background-color: #404040;
     border-color: #404040;
+}
+
+/* Translation iframe styling */
+.translate-frame {
+    min-height: 600px;  /* 替换固定height为min-height */
+    border-radius: 10px;
+    background-color: #fff;
 }
